@@ -7,11 +7,12 @@ using prakticeMVC1.Models;
 
 namespace prakticeMVC1.Data
 {
-    public class StoreContext
+    public class StoreContext : DbContext
     {
         public DbSet<Album> Album { get; set; }
         public DbSet<Artist> Artist { get; set; }
         public DbSet<Genre> Genre { get; set; }
 
+       
     }
 }
